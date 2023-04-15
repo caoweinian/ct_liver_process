@@ -1,0 +1,11 @@
+/target
+/draft.txt
+/draft
+/log
+/data
+/dataset
+**/.idea
+**/.vscode
+**/Cargo.lock
+**/lib
+/LiTS_train

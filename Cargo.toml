@@ -1,0 +1,8 @@
+[workspace]
+members = [
+    "label",
+    "detection",
+]
+exclude = [
+    "draft",
+]

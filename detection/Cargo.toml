@@ -1,0 +1,17 @@
+[package]
+name = "detection"
+version = "0.11.3"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+label = { path = "../label" }
+cfg-if = "1.0.0"
+clap = { version = "4.0.17", features = ["derive"] }
+image = "0.24.4"
+ndarray = "0.15.6"
+ndarray-npy = "0.8.1"
+nifti = { version = "0.14.0", features = ["ndarray_volumes"] }
+walkdir = "2.3.2"
+opencv = "0.71.0"
