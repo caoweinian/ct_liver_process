@@ -19,7 +19,7 @@ cfg_if::cfg_if! {
     if #[cfg(target_os = "macos")] {
         use opencv::imgproc::LINE_8;
     } else if #[cfg(target_os = "linux")] {
-        use opencv::core::LINE_8;
+        use opencv::imgproc::LineTypes::LINE_8;
     }
 }
 #[derive(Args, Debug)]
@@ -320,7 +320,7 @@ impl Program {
                 -1,
                 Scalar::from(255),
                 1,
-                LINE_8,
+                LINE_8 as i32,
                 &no_array(),
                 i32::MAX,
                 Point::default(),
